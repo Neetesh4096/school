@@ -15,6 +15,6 @@ mongoose
   });
 
 const port = 4000;
-app.listen(port, (req, res) => {
+app.listen(process.env.port || port, (req, res) => {
   console.log(`App running at ${port}`);
 });

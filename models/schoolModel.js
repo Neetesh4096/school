@@ -1,7 +1,10 @@
 const { ObjectID } = require("bson");
 const mongoose = require("mongoose");
 
-const schoolSchema =new mongoose.Schema({
+const schoolSchema = new mongoose.Schema({
+  id: {
+    type: ObjectID,
+  },
   name: {
     type: String,
     required: [true, "Please enter name"],
